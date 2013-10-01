@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ermira.raisa.tacrox"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ermira.raisa.tacrox.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  
+            android:name="com.ermira.raisa.tacrox.MoveBalloon"
+            android:screenOrientation="portrait">
+           
+         </activity>
+          <activity  
+            android:name="com.ermira.raisa.tacrox.ShowQuote"
+           >
+           
+         </activity>
+         
+        <activity  
+            android:name="com.ermira.raisa.tacrox.AddQuote"
+            >
+           
+         </activity>
+         <activity  
+            android:name="com.ermira.raisa.tacrox.EditQuote"
+            >
+           
+         </activity>
+         <activity  
+            android:name="com.ermira.raisa.tacrox.SlideQuote"
+            >
+           
+         </activity>
+         <activity  
+            android:name="com.ermira.raisa.tacrox.Quote"
+            android:screenOrientation="portrait">
+            </activity>
+             <activity  
+            android:name="com.ermira.raisa.tacrox.MoveShip"
+            android:screenOrientation="portrait">
+           
+         </activity>
+         <activity  
+            android:name="com.ermira.raisa.tacrox.MoveTear"
+            android:screenOrientation="portrait">
+           
+         </activity>
+         <activity  
+            android:name="com.ermira.raisa.tacrox.MoveCloud"
+            android:screenOrientation="portrait">
+           
+         </activity>
+           
+         
+    </application>  
+<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    
+</manifest>

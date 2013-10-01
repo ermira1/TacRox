@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TacRox</string>
+    <string name="action_settings">Settings</string>
+   <string name="button1">Happiness</string>
+    <string name="button2">Sadness</string>
+    <string name="button3">Quotes</string>
+    
+    <string name="add_quotes">Add Quotes</string>
+    <string name="Quote">Quote:</string>
+    <string name="Author">Author:</string>
+     
+    
+    <string name="my_quote_list_title">My quote list</string>
+    <string name="add_button">ADD</string>
+    
+    <string name="save_data">SAVE</string>
+    
+    <string name="edit_quote_title">Edit Quote</string>
+    <string name="edit_button">EDIT</string>
+    <string name="delete_button">DELETE</string>
+     <string name="quoteView"></string>
+     <string name="authorView"></string>
+     <string name="saveEdit">SAVE EDIT</string>
+     <string name="largeText">quote</string>
+     <string name="text">author</string>
+      <string name="slideButton">SLIDE</string>
+     <string name="button4">RELAX</string>
+     <string name="button5">Cry</string>
+          <string name="button6">Think+</string>
+     
+           
+      
+                
+        
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+ <TextView
+     android:id="@+id/editNewItemsTittle"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:background="#000000"
+     android:text="@string/edit_quote_title"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editNewItemsTittle"
+        android:layout_marginTop="26dp"
+        android:text="@string/Quote" />
+
+    <EditText
+        android:id="@+id/textQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemTextView"
+        android:layout_alignBottom="@+id/itemTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+     <requestFocus />
+     
+     </EditText>
+     
+     <TextView
+         android:id="@+id/amountTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/itemTextView"
+         android:layout_marginTop="26dp"
+         android:text="@string/Author" />
+
+    <EditText
+        android:id="@+id/textAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/amountTextView"
+        android:layout_alignBottom="@+id/amountTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/saveEdit"
+        android:onClick="saveItem" />
+   
+   </RelativeLayout>
