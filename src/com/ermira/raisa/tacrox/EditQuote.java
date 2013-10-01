@@ -1,7 +1,6 @@
 package com.ermira.raisa.tacrox;
 
 import java.util.HashMap;
-import com.ermira.raisa.tacrox.MainActivity;
 import com.ermira.raisa.tacrox.R;
 import android.app.Activity;
 import android.content.Intent;
