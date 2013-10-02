@@ -2,6 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:background="@drawable/quotebg"
+    
      >
     
 
@@ -14,7 +16,10 @@
         android:text="@string/add_quotes"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF"
-        android:background="#000000" />
+        android:gravity="center"
+        
+       android:background="#80339900" 
+        />
 
     <Button
         android:id="@+id/saveButton"
@@ -23,53 +28,64 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="57dp"
-        android:background="#006600"
         android:onClick="addNewItems"
         android:text="@string/save_data"
+        android:background="#33339900" 
         android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/textAuthorAdd"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/amountTextView"
         android:layout_marginTop="35dp"
+        android:textColor="@android:color/white"
+        android:background="#33999999" 
         android:ems="10"
         android:inputType="text" >
 
         <requestFocus />
     </EditText>
 
-    <TextView
-        android:id="@+id/itemTextView"
+    <EditText
+        android:id="@+id/textQuoteAdd"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/saveButton"
-        android:layout_below="@+id/addNewItemsTittle"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="34dp"
-        android:text="@string/Quote" />
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:background="#33999999" 
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemTextView"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:layout_height="60dp"
+        android:inputType="textMultiLine" />
 
     <TextView
         android:id="@+id/amountTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/itemTextView"
-        android:layout_below="@+id/textQuoteAdd"
-        android:layout_marginTop="64dp"
-        android:text="@string/Author" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/Author"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
 
-    <EditText
-        android:id="@+id/textQuoteAdd"
+    <TextView
+        android:id="@+id/itemTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/itemTextView"
-        android:layout_marginTop="35dp"
-        android:ems="10"
-        android:inputType="textMultiLine" />
+        android:layout_below="@+id/addNewItemsTittle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/Quote"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
    
 </RelativeLayout>

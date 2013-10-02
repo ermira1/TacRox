@@ -283,6 +283,10 @@ private void checkCollisions(Canvas canvas){
 	}else{
 		if (sensorY>height-40){
 		       canvas.drawBitmap(_foto,(width-_foto.getWidth()),0, null);
+		       if(!count){
+		    	   mp.start();
+		    	   count=true;
+		       }
 
 		}
 	}

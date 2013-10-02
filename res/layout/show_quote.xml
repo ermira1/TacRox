@@ -2,57 +2,62 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/quotebg"
     android:orientation="vertical" >
-<TextView
+
+    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="114dp"
-        android:text="@string/quoteView"
-        android:typeface="serif"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="52dp"
         android:gravity="center"
+        android:text="@string/quoteView"
         android:textAlignment="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:typeface="serif"
-        android:textStyle="bold|italic"
-        android:textSize="17sp"
         android:gravity="center"
+        android:text="@string/authorView"
         android:textAlignment="center"
-        android:text="@string/authorView" />
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:onClick="removeItem"
-        android:layout_marginTop="20dp"
-        android:text="@string/delete_button" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:onClick="editItems"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_toLeftOf="@+id/textView2"
+         android:background="#33339900" 
+        android:textColor="#FFFFFF"
+       android:onClick="editItems"
         android:text="@string/edit_button" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView2"
+         android:onClick="removeItem"
+          android:background="#33339900" 
+        android:textColor="#FFFFFF"
+           android:text="@string/delete_button"
+         />
 
 </RelativeLayout>

@@ -50,6 +50,7 @@ public class DrawBalloon extends SurfaceView implements Runnable {
 	public DrawBalloon(Context context) {
 		super(context);
 		 mp = MediaPlayer.create(context, R.raw.raisa);
+		 
 		ourHolder= getHolder();
 		
 	}
@@ -283,6 +284,10 @@ private void checkCollisions(Canvas canvas){
 	}else{
 		if (sensorY<40){
 		       canvas.drawBitmap(_foto,(width-_foto.getWidth())/2, height/8, null);
+		       if(!count){
+		    	   mp.start();
+		    	   count=true;
+		       }
 
 		}
 	}

@@ -2,6 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:background="@drawable/quotebg"
+    
     android:orientation="vertical" >
 
     <TextView
@@ -13,7 +15,8 @@
         android:layout_marginBottom="206dp"
         android:typeface="serif"
         android:textStyle="bold|italic"
-        android:textSize="17sp"
+          android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:gravity="center"
         android:textAlignment="center"
         android:text="@string/text" />
@@ -30,6 +33,8 @@
         android:gravity="center"
         android:textAlignment="center"
         android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:layout_marginRight="10dp"
         android:text="@string/largeText"
         android:textAppearance="?android:attr/textAppearanceLarge" />

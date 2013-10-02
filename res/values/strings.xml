@@ -13,19 +13,19 @@
      
     
     <string name="my_quote_list_title">My quote list</string>
-    <string name="add_button">ADD</string>
+    <string name="add_button">Add</string>
     
     <string name="save_data">SAVE</string>
     
     <string name="edit_quote_title">Edit Quote</string>
-    <string name="edit_button">EDIT</string>
-    <string name="delete_button">DELETE</string>
-     <string name="quoteView"></string>
-     <string name="authorView"></string>
-     <string name="saveEdit">SAVE EDIT</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+     <string name="quoteView">Quote</string>
+     <string name="authorView">Author</string>
+     <string name="saveEdit">Save edit</string>
      <string name="largeText">quote</string>
      <string name="text">author</string>
-      <string name="slideButton">SLIDE</string>
+      <string name="slideButton">Slide</string>
      <string name="button4">RELAX</string>
      <string name="button5">Cry</string>
           <string name="button6">Think+</string>
