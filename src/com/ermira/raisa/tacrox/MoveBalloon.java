@@ -296,6 +296,7 @@ public void onBackPressed() {
 	
 	mic.stopMic();
 	  Intent objIntent = new Intent(getApplication(), MainActivity.class);
+	  mp.stop();
 	  myView.pause();
 	  startActivity(objIntent);
 	  
