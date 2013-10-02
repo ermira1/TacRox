@@ -162,7 +162,6 @@ public ArrayList<HashMap<String, String>> getAllItemsRed(){
 	 
 	}
 
-
 public HashMap<String, String> getItemInfo(String id){
  
  HashMap<String, String> itemMap = new HashMap<String, String>();
