@@ -23,6 +23,8 @@
          android:textColor="#444444"
         android:textSize="20sp"
         android:textStyle="bold" />
+    
+    
 
     <TextView
         android:id="@+id/textAuthor"
