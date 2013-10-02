@@ -148,7 +148,13 @@ public ArrayList<HashMap<String, String>> getAllItemsRed(){
 	   HashMap<String, String> itemMap = new HashMap<String, String>();
 	   
 	   itemMap.put("quoteId", cursor.getString(0));
-	   itemMap.put("textQuote", cursor.getString(1).substring(0, 35)+" ...");
+	   if(cursor.getString(1).length()>=30)
+	   {
+	   itemMap.put("textQuote", cursor.getString(1).substring(0, 30)+" ...");}
+	   else{
+		   itemMap.put("textQuote", cursor.getString(1));}
+
+	   
 	      
 	   
 	  itemArrayList.add(itemMap);

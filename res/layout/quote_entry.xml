@@ -15,14 +15,16 @@
     <TextView
         android:id="@+id/textQuote"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_alignBaseline="@+id/quoteId"
         android:layout_alignBottom="@+id/quoteId"
         android:layout_marginLeft="21dp"
         android:layout_toRightOf="@+id/quoteId"
-         android:textColor="#444444"
+         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:gravity="center"/>
     
     
 
