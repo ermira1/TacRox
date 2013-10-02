@@ -28,8 +28,8 @@ public void onCreate(Bundle savedInstanceState) {
  setContentView(R.layout.add_quote);//define the interface that is used, add_quote.xml
 
  
- textQuote = (EditText) findViewById(R.id.textQuote);
- textAuthor = (EditText) findViewById(R.id.textAuthor);
+ textQuote = (EditText) findViewById(R.id.textQuoteAdd);
+ textAuthor = (EditText) findViewById(R.id.textAuthorAdd);
  
  }
 

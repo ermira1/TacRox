@@ -11,6 +11,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="114dp"
         android:text="@string/quoteView"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -20,6 +26,11 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textAlignment="center"
         android:text="@string/authorView" />
 
     <Button
