@@ -10,7 +10,9 @@ import com.ermira.raisa.tacrox.EditQuote;
 import com.ermira.raisa.tacrox.AddQuote;
 import com.ermira.raisa.tacrox.R;
 import android.os.Bundle;
+import android.content.Context;
 import android.content.Intent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
@@ -34,15 +36,17 @@ public class Quote extends ListActivity {
   
   //Store data from database in an array list
   
-  ArrayList<HashMap<String, String>> quoteList =  quotedatabase.getAllItems();
+  ArrayList<HashMap<String, String>> quoteList =  quotedatabase.getAllItemsRed();
 
   //Check if there are quotes to display
   if(quoteList.size()!=0) {
    
    ListView listView = getListView();
+
    listView.setOnItemClickListener(new OnItemClickListener() {
     
     public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
+    	
      
         
      quoteId = (TextView) view.findViewById(R.id.quoteId);
@@ -66,11 +70,11 @@ public class Quote extends ListActivity {
    ListAdapter adapter = new SimpleAdapter( Quote.this,quoteList, R.layout.quote_entry, new String[] { "quoteId","textQuote"}, new int[] {R.id.quoteId, R.id.textQuote});
 
    setListAdapter(adapter);
-   
+  }
    
   }
   
- }
+ 
  
  //When we press button that calls showAddItem activity then AddNewItems is called 
   

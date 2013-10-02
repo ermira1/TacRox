@@ -55,4 +55,12 @@ public void callQuote(View view) {
  finish();
  startActivity(theIntent);
 } 
+
+public void onBackPressed() {
+    
+    Intent backIntent = new Intent(getApplication(), Quote.class);
+    finish();
+    startActivity(backIntent);
+      
+      }
 }
