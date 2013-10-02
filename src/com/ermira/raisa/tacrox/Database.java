@@ -19,6 +19,7 @@ public class Database extends SQLiteOpenHelper {
  @Override
  //Create database
  public void onCreate(SQLiteDatabase database) {
+
 	   
 	  String query = "CREATE TABLE quotelist ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)";
 	  String query1 = "INSERT INTO quotelist  VALUES ( '1', 'When life gives you a hundred reasons to cry, show life that you have a thousand reasons to smile.', 'Unknown author')";
@@ -40,6 +41,9 @@ public class Database extends SQLiteOpenHelper {
 	    
 
 	 }
+   
+  
+ 
 
  @Override
  public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {

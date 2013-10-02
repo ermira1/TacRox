@@ -73,9 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/button6"
-                android:onClick="showBalloon"
-                android:background="@null"
+        android:onClick="showBalloon"
+        android:background="@null"
         
-        android:src="@drawable/button" />
+        android:src="@drawable/bhappy" />
 
 </RelativeLayout>
