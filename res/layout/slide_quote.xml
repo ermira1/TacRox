@@ -11,6 +11,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="206dp"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textAlignment="center"
         android:text="@string/text" />
 
     <TextView
@@ -20,6 +25,12 @@
         android:layout_above="@+id/textView4"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="42dp"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="@string/largeText"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
