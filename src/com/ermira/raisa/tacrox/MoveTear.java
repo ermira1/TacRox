@@ -49,7 +49,7 @@ public class DrawBalloon extends SurfaceView implements Runnable {
 	
 	public DrawBalloon(Context context) {
 		super(context);
-		 mp = MediaPlayer.create(context, R.raw.yeehaaa);
+		 mp = MediaPlayer.create(context, R.raw.cry);
 		ourHolder= getHolder();
 		
 	}
