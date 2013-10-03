@@ -109,6 +109,7 @@ int b4;
 	finish();
 	startActivity(intent);
 	}
+
 	public void showQuoteList(View view){
 		Intent intent = new Intent(getApplicationContext(), Quote.class);
 
@@ -121,5 +122,18 @@ int b4;
 		 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://quotelicious.com/"));
 		    startActivity(i);
 		}
+
+	
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		
+		
+		  Intent objIntent = new Intent(getApplication(), StartingApp.class);
+		 finish();
+		  startActivity(objIntent);
+		  
+		 }
+
 
 }

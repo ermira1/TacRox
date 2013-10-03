@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageButton2"
         android:layout_below="@+id/imageButton2"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="20dp"
         android:background="@null"
         android:onClick="showTear"
         android:src="@drawable/crybutton" 
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageButton3"
         android:layout_below="@+id/imageButton3"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:background="@null"
         android:onClick="showShip"
         android:src="@drawable/relaxbutton" 
@@ -58,18 +58,6 @@
          android:contentDescription="@string/think_des" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButton5"
-        android:layout_below="@+id/imageButton5"
-        android:layout_marginTop="23dp"
-        android:background="@null"
-        android:onClick="showQuoteList"
-        android:src="@drawable/quotebutton" 
-         android:contentDescription="@string/quote_des"/>
-
-    <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,20 +65,21 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
         android:background="@null"
         android:contentDescription="@string/happy_des"
         android:onClick="showBalloon"
         android:src="@drawable/happybutton" />
 
-    <Button
-        android:id="@+id/buttonWeb"
-        style="?android:attr/buttonStyleSmall"
+    <ImageButton
+        android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageButton1"
-        android:layout_marginTop="29dp"
-        android:onClick="openWeb"
-        android:text="@string/webButton" />
+        android:layout_alignLeft="@+id/imageButton5"
+        android:layout_below="@+id/imageButton5"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:onClick="showStress"
+        android:src="@drawable/stressbutton" />
 
 </RelativeLayout>

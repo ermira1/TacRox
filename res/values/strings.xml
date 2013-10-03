@@ -16,7 +16,6 @@
     <string name="add_button">Add</string>
     
     <string name="save_data">Save</string>
-    
     <string name="edit_quote_title">Edit Quote</string>
     <string name="edit_button">Edit</string>
     <string name="delete_button">Delete</string>
@@ -31,6 +30,8 @@
      <string name="button6">Think+</string>
 
 
+
+
      
       <string name="sad_des">Sad button</string>
      <string name="cry_des">Crying button</string>
@@ -42,10 +43,8 @@
       <string name="webButton">Webi</string>
      
 
-     
-           
       
                 
         
-
+ 
 </resources>
