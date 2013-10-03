@@ -1,6 +1,7 @@
 package com.ermira.raisa.tacrox;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
@@ -24,7 +25,7 @@ public class Accelerometer extends Activity implements SensorEventListener
  int id;
  int total;
  float x;
- boolean first=true;
+ boolean first=false;
  String s1,s2;
   StressDB quotedatabase = new StressDB(this);
 
@@ -34,8 +35,15 @@ public class Accelerometer extends Activity implements SensorEventListener
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.slide_quote);
+        setContentView(R.layout.stres_quote);
         mInitialized = false;
+        new AlertDialog.Builder(this)
+        .setIcon(android.R.drawable.ic_dialog_alert)
+        .setTitle("Instruction!")
+        .setMessage("Shake the phone to read other quotes!")
+        .setPositiveButton("OK", null)
+         .show();
+        
         //get the TextView from the layout file
         quote = (TextView) findViewById(R.id.textView3);
         author = (TextView) findViewById(R.id.textView4);

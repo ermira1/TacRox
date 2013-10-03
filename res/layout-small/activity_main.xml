@@ -12,11 +12,11 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@+id/imageButton1"
         android:layout_below="@+id/imageButton1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@null"
         android:onClick="showStar"
         android:src="@drawable/sadbutton" 
@@ -24,11 +24,11 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+         android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@+id/imageButton2"
         android:layout_below="@+id/imageButton2"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@null"
         android:onClick="showTear"
         android:src="@drawable/crybutton" 
@@ -36,11 +36,11 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+         android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@+id/imageButton3"
         android:layout_below="@+id/imageButton3"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@null"
         android:onClick="showShip"
         android:src="@drawable/relaxbutton" 
@@ -48,49 +48,47 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+         android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@+id/imageButton4"
         android:layout_below="@+id/imageButton4"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@null"
         android:onClick="showCloud"
         android:src="@drawable/thinkbutton"
          android:contentDescription="@string/think_des" />
-
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="25dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:textAlignment="center"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:text="@string/TextView" />
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:background="@null"
-        android:contentDescription="@string/happy_des"
         android:onClick="showBalloon"
-        android:src="@drawable/happybutton" />
+        android:src="@drawable/happybutton"
+        android:contentDescription="@string/happy_des" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@+id/imageButton5"
         android:layout_below="@+id/imageButton5"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@null"
         android:onClick="showStress"
         android:src="@drawable/stressbutton" />

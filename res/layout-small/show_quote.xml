@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quotebg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="@string/quoteView"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/authorView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_toLeftOf="@+id/textView2"
+         android:background="#33339900" 
+        android:textColor="#FFFFFF"
+       android:onClick="editItems"
+        android:text="@string/edit_button" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView2"
+         android:onClick="removeItem"
+          android:background="#33339900" 
+        android:textColor="#FFFFFF"
+           android:text="@string/delete_button"
+         />
+
+</RelativeLayout>

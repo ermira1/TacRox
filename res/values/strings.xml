@@ -29,7 +29,8 @@
      <string name="button4">Relax</string>
      <string name="button5">Cry</string>
      <string name="button6">Think+</string>
-
+     <string name="TextView">How do you feel today?</string>
+     
      
       <string name="sad_des">Sad button</string>
      <string name="cry_des">Crying button</string>

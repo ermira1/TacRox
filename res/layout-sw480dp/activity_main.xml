@@ -9,7 +9,19 @@
     android:background="@drawable/mainbg2"
    
     tools:context=".MainActivity" >
-
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:text="@string/TextView" />
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
