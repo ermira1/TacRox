@@ -3,6 +3,7 @@ package com.ermira.raisa.tacrox;
 import java.util.HashMap;
 import com.ermira.raisa.tacrox.R;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -48,10 +49,23 @@ public class EditQuote extends Activity{
     textQuote = (EditText) findViewById(R.id.textQuote);
     textAuthor = (EditText) findViewById(R.id.textAuthor);
        
-    
+  
     Intent theIntent = getIntent();
     
+    
     String quoteId = theIntent.getStringExtra("quoteId");
+    if(textQuote.getText().toString().length()<30)
+    {
+    	 new AlertDialog.Builder(this)
+         .setIcon(android.R.drawable.ic_dialog_alert)
+         .setTitle("Be careful!")
+         .setMessage("Please write more than 30 characters")
+         .setPositiveButton("OK", null)
+
+
+     .show();
+    }
+    else{
     
     queryValuesMap.put("quoteId", quoteId);
     queryValuesMap.put("textQuote", textQuote.getText().toString());
@@ -59,6 +73,7 @@ public class EditQuote extends Activity{
         
     quotedatabase.updateItem(queryValuesMap);
     this.callQuote(view);
+    }
     
    }
 

@@ -1,5 +1,6 @@
 package com.ermira.raisa.tacrox;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -108,13 +109,16 @@ int b4;
 	finish();
 	startActivity(intent);
 	}
-	public void showQuoteList(View view){
-		Intent intent = new Intent(getApplicationContext(), Quote.class);
-
-		finish();
-		startActivity(intent);
+	
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
 		
 		
-	}
+		  Intent objIntent = new Intent(getApplication(), StartingApp.class);
+		 finish();
+		  startActivity(objIntent);
+		  
+		 }
 
 }

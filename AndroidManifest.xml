@@ -15,7 +15,7 @@
         
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.ermira.raisa.tacrox.MainActivity"
+            android:name="com.ermira.raisa.tacrox.StartingApp"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
@@ -70,6 +70,11 @@
          </activity>
          <activity  
             android:name="com.ermira.raisa.tacrox.MoveCloud"
+            android:screenOrientation="portrait">
+           
+         </activity>
+           <activity  
+            android:name="com.ermira.raisa.tacrox.MainActivity"
             android:screenOrientation="portrait">
            
          </activity>

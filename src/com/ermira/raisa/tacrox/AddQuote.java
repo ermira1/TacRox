@@ -53,7 +53,12 @@ else{
 	
 
  queryValuesMap.put("textQuote", textQuote.getText().toString());
+ if(textAuthor.getText().toString().length()==0){
+	 queryValuesMap.put("textAuthor","Unknown author");
+ }
+ else{
  queryValuesMap.put("textAuthor",textAuthor.getText().toString());
+ }
  
  
  

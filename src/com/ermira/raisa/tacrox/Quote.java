@@ -91,7 +91,7 @@ public class Quote extends ListActivity {
 @Override
 public void onBackPressed() {
 	// TODO Auto-generated method stub
-    Intent backIntent = new Intent(getApplication(), MainActivity.class);
+    Intent backIntent = new Intent(getApplication(), StartingApp.class);
     finish();
     startActivity(backIntent);
 }
