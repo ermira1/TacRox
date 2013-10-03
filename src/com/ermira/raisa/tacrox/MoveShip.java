@@ -1,7 +1,5 @@
 package com.ermira.raisa.tacrox;
 
-import java.io.IOException;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +13,7 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
+
 
 public class MoveShip extends Activity {
 	Bitmap balloon;

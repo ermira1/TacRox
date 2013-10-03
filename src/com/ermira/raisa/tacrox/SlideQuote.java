@@ -1,16 +1,8 @@
 package com.ermira.raisa.tacrox;
 
-import java.util.HashMap;
-
 import android.app.Activity;
-import android.content.Context;
+
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v4.view.MotionEventCompat;
 import android.util.DisplayMetrics;
@@ -21,14 +13,13 @@ import android.widget.TextView;
 
 public class SlideQuote extends Activity 
 {
-	 private float mLastX, mLastY, mLastZ;
-	    private boolean mInitialized;
-	    private final float NOISE = (float) 4.0;
+	 	 
+	   
  //a TextView
  private TextView quote;
  private TextView author;
  //the Sensor Manager
- private SensorManager sManager;
+
  float xLast,xCurrent;
  int id;
  int total;
@@ -45,7 +36,7 @@ int width;
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.slide_quote);
-        mInitialized = false;
+        
         //get the TextView from the layout file
         quote = (TextView) findViewById(R.id.textView3);
         author = (TextView) findViewById(R.id.textView4);
@@ -98,8 +89,7 @@ id=1;
  @Override
  public boolean onTouchEvent(MotionEvent event){ 
  { float eventX = event.getX();
- float eventY = event.getY();
-  
+   
  int action = MotionEventCompat.getActionMasked(event);
  
  switch(action) {
