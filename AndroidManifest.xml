@@ -3,6 +3,9 @@
     package="com.ermira.raisa.tacrox"
     android:versionCode="1"
     android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -70,6 +73,11 @@
          </activity>
          <activity  
             android:name="com.ermira.raisa.tacrox.MoveCloud"
+            android:screenOrientation="portrait">
+           
+         </activity>
+          <activity  
+            android:name="com.ermira.raisa.tacrox.WebViewActivity"
             android:screenOrientation="portrait">
            
          </activity>

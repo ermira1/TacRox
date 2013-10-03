@@ -29,8 +29,8 @@
      <string name="button4">Relax</string>
      <string name="button5">Cry</string>
      <string name="button6">Think+</string>
-<<<<<<< HEAD
-=======
+
+
      
       <string name="sad_des">Sad button</string>
      <string name="cry_des">Crying button</string>
@@ -38,9 +38,10 @@
      <string name="think_des">Think button</string>
      <string name="quote_des">Quote button</string>
      <string name="happy_des">Happy button</string>
+      
+      <string name="webButton">Webi</string>
      
-     
->>>>>>> 6fd13503cd502cd51fe2f1df5cf137c0d5bddde1
+
      
            
       

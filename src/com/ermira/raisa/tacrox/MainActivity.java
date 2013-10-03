@@ -1,5 +1,6 @@
 package com.ermira.raisa.tacrox;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -113,8 +114,12 @@ int b4;
 
 		finish();
 		startActivity(intent);
-		
+	
 		
 	}
+	public void openWeb(View view){
+		 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://quotelicious.com/"));
+		    startActivity(i);
+		}
 
 }
