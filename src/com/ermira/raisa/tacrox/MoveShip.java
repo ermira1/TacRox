@@ -49,7 +49,7 @@ public class DrawBalloon extends SurfaceView implements Runnable {
 	
 	public DrawBalloon(Context context) {
 		super(context);
-		 mp = MediaPlayer.create(context, R.raw.yeehaaa);
+		 mp = MediaPlayer.create(context, R.raw.relax);
 		ourHolder= getHolder();
 		
 	}
@@ -303,6 +303,7 @@ public void onBackPressed() {
 	
 	mic.stopMic();
 	  Intent objIntent = new Intent(getApplication(), MainActivity.class);
+	  mp.stop();
 	  myView.pause();
 	  startActivity(objIntent);
 	  
