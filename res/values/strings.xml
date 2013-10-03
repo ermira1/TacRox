@@ -28,7 +28,16 @@
       <string name="slideButton">Slide</string>
      <string name="button4">RELAX</string>
      <string name="button5">Cry</string>
-          <string name="button6">Think+</string>
+     <string name="button6">Think+</string>
+     
+      <string name="sad_des">Sad button</string>
+     <string name="cry_des">Crying button</string>
+     <string name="relax_des">Relax button</string>
+     <string name="think_des">Think button</string>
+     <string name="quote_des">Quote button</string>
+     <string name="happy_des">Happy button</string>
+     
+     
      
            
       
