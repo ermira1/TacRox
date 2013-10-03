@@ -15,7 +15,7 @@
     <string name="my_quote_list_title">My quote list</string>
     <string name="add_button">Add</string>
     
-    <string name="save_data">SAVE</string>
+    <string name="save_data">Save</string>
     
     <string name="edit_quote_title">Edit Quote</string>
     <string name="edit_button">Edit</string>
@@ -26,9 +26,9 @@
      <string name="largeText">quote</string>
      <string name="text">author</string>
       <string name="slideButton">Slide</string>
-     <string name="button4">RELAX</string>
+     <string name="button4">Relax</string>
      <string name="button5">Cry</string>
-          <string name="button6">Think+</string>
+     <string name="button6">Think+</string>
      
            
       
