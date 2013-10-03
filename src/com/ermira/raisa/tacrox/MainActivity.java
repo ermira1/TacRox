@@ -120,5 +120,12 @@ int b4;
 		  startActivity(objIntent);
 		  
 		 }
+	
+	public void showStress(View view){
+		  Intent objIntent = new Intent(getApplication(), Accelerometer.class);
+			 
+			  startActivity(objIntent);
+		
+	}
 
 }

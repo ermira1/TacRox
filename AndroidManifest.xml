@@ -78,6 +78,11 @@
             android:screenOrientation="portrait">
            
          </activity>
+          <activity  
+            android:name="com.ermira.raisa.tacrox.Accelerometer"
+            android:screenOrientation="portrait">
+           
+         </activity>
            
          
     </application>  
