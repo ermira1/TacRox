@@ -1,5 +1,6 @@
 package com.ermira.raisa.tacrox;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -111,6 +112,20 @@ int b5;
 	finish();
 	startActivity(intent);
 	}
+
+	public void showQuoteList(View view){
+		Intent intent = new Intent(getApplicationContext(), Quote.class);
+
+		finish();
+		startActivity(intent);
+	
+		
+	}
+	public void openWeb(View view){
+		 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://quotelicious.com/"));
+		    startActivity(i);
+		}
+
 	
 	@Override
 	public void onBackPressed() {
@@ -129,5 +144,6 @@ int b5;
 			  startActivity(objIntent);
 		
 	}
+
 
 }
