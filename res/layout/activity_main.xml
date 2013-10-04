@@ -81,7 +81,9 @@
         android:layout_marginTop="10dp"
         android:background="@null"
         android:onClick="showStress"
+        android:contentDescription="@string/stress_des"
         android:src="@drawable/stressbutton" />
+
 
     <ImageButton
         android:id="@+id/imageButton1"
