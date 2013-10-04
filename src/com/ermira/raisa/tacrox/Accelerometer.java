@@ -9,11 +9,12 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.TextView;
 
 public class Accelerometer extends Activity implements SensorEventListener
-{
+{private MediaPlayer mp;
   private float mLastX, mLastY, mLastZ;
      private boolean mInitialized;
      private final float NOISE = (float) 4.0;
@@ -62,6 +63,8 @@ id=1;
 
       quote.setText(s1);
       author.setText(s2);
+      mp=MediaPlayer.create(getApplicationContext(), R.raw.stress);
+      mp.start();
     }
     }
     //when this Activity starts
@@ -140,6 +143,7 @@ id=1;
   sManager.unregisterListener(this);
   id=1;
   Intent backIntent = new Intent(getApplication(), MainActivity.class);
+  mp.stop();
        finish();
        startActivity(backIntent);
   
