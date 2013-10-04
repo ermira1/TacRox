@@ -1,0 +1,13 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS quoteList ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)
+</statement>
+<statement>INSERT INTO quotelist  VALUES ( '1', 'When life gives you a hundred reasons to cry, show life that you have a thousand reasons to smile.', 'Unknown author')</statement>
+<statement>INSERT INTO quotelist  VALUES ('2', 'The time to relax is when you don`t have time for it.', 'Sydney J. Harris ')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '3', 'Don`t cry because it`s over, smile because it happened.', 'Dr. Seuss')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '4', 'Two things are infinite: the universe and human stupidity, and I`m not sure about the universe.', ' Albert Einstein')</statement>
+<statement>INSERT INTO quotelist  VALUES ('5', 'I always like walking in the rain, so no one can see me crying.', 'Charly Chaplin ' )</statement>
+<statement>INSERT INTO quotelist  VALUES ('6', 'Ask yourself this question:Will this matter a year from now?', 'Richard Carlson')</statement>
+<statement>INSERT INTO quotelist  VALUES ('7', 'Never tell your problems to anyone...20% don`t care and the other 80% are glad you have them.', 'Lou Holtz')</statement>
+
+</sql>

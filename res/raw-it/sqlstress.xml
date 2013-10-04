@@ -1,0 +1,13 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS quoteList ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)
+</statement>
+<statement>INSERT INTO quotelist  VALUES ( '1', 'La più grande arma contro lo stress è la nostra capacità di scegliere un pensiero piuttosto che un altro.', 'William James')</statement>
+<statement>INSERT INTO quotelist  VALUES ('2', 'Il tempo per rilassarsi è quando non si ha tempo per farlo. Devi imparare a lasciar andare. Scaricare lo stress. Non sei mai stato in controllo comunque.', 'Steve Maraboli')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '3', 'Quando le cose vanno male, don `t andare con loro.', 'Elvis Presley')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '4', 'Se tratti ogni situazione come una questione di vita o di morte, morirai un sacco di volte.', 'Dean Smith')</statement>
+<statement>INSERT INTO quotelist  VALUES ('5', 'Lascia la tua ali di stress e lasciarlo volare via.', 'Terri Guillemets' )</statement>
+<statement>INSERT INTO quotelist  VALUES ('6', 'Non c`è mai abbastanza tempo per fare tutto il niente che vuoi.', 'Bill Watterson')</statement>
+<statement>INSERT INTO quotelist  VALUES ('7', 'Lo stress è uno stato ignorante. Si crede che tutto è un'emergenza.', 'Natalie Goldberg')</statement>
+
+</sql>

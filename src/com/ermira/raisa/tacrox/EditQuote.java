@@ -55,15 +55,12 @@ public class EditQuote extends Activity{
     
     String quoteId = theIntent.getStringExtra("quoteId");
     if(textQuote.getText().toString().length()<30)
-    {
-    	 new AlertDialog.Builder(this)
-         .setIcon(android.R.drawable.ic_dialog_alert)
-         .setTitle("Be careful!")
-         .setMessage("Please write more than 30 characters")
-         .setPositiveButton("OK", null)
-
-
-     .show();
+    { new AlertDialog.Builder(this)
+    .setIcon(android.R.drawable.ic_dialog_alert)
+    .setTitle(getResources().getString(R.string.poptitle))
+    .setMessage(getResources().getString(R.string.popmessage))
+    .setPositiveButton("OK", null)
+    .show();
     }
     else{
     

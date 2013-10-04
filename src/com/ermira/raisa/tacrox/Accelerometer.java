@@ -41,10 +41,10 @@ public class Accelerometer extends Activity implements SensorEventListener
         mInitialized = false;
         new AlertDialog.Builder(this)
         .setIcon(android.R.drawable.ic_dialog_alert)
-        .setTitle("Instruction!")
-        .setMessage("Shake the phone to read other quotes!")
+        .setTitle(getResources().getString(R.string.poptitle1))
+        .setMessage(getResources().getString(R.string.popmessage1))
         .setPositiveButton("OK", null)
-         .show();
+        .show();
         
         //get the TextView from the layout file
         quote = (TextView) findViewById(R.id.textView3);

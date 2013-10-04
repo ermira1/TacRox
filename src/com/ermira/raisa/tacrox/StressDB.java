@@ -1,43 +1,46 @@
 package com.ermira.raisa.tacrox;
 
 
+import java.io.InputStream;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class StressDB extends SQLiteOpenHelper {
- 
+	Context context;
  public StressDB(Context stressContext){
  
  super(stressContext, "stressDB", null, 1);
+ this.context=stressContext;
  
  }
 
  @Override
  //Create database
  public void onCreate(SQLiteDatabase database) {
-
-	   
-	  String query = "CREATE TABLE quotelist ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)";
-	  String query1 = "INSERT INTO quotelist  VALUES ( '1', 'The greatest weapon against stress is our ability to choose one thought over another.', 'William James')";
-	  String query2 = "INSERT INTO quotelist  VALUES ( '2', 'The time to relax is when you don`t have time for it.You must learn to let go. Release the stress. You were never in control anyway.', 'Steve Maraboli')";
-	  String query3 = "INSERT INTO quotelist  VALUES ( '3', 'When things go wrong, don`t go with them.', 'Elvis Presley')";
-	  String query4 = "INSERT INTO quotelist  VALUES ( '4', 'If you treat every situation as a life and death matter, you`ll die a lot of times.', 'Dean Smith')";
-	  String query5 = "INSERT INTO quotelist  VALUES ( '5', 'Give your stress wings and let it fly away.', 'Terri Guillemets')";
-	  String query6 = "INSERT INTO quotelist  VALUES ( '6', 'There`s never enough time to do all the nothing you want.', 'Bill Watterson')";
-	  String query7 = "INSERT INTO quotelist  VALUES ( '7', 'Stress is an ignorant state.  It believes that everything is an emergency.', 'Natalie Goldberg')";
-	  
-	    database.execSQL(query);
-	    database.execSQL(query1);
-	    database.execSQL(query2);
-	    database.execSQL(query3);
-	    database.execSQL(query4);
-	    database.execSQL(query5);
-	    database.execSQL(query6);
-	    database.execSQL(query7);
-	    
-
+	 String s;
+		try {
+			Toast.makeText(context, "1", 2000).show();
+			InputStream in = context.getResources().openRawResource(R.raw.sqlstress);
+			DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+			Document doc = builder.parse(in, null);
+			NodeList statements = doc.getElementsByTagName("statement");
+			for (int i=0; i<statements.getLength(); i++) {
+				s = statements.item(i).getChildNodes().item(0).getNodeValue();
+				database.execSQL(s);
+			}
+		} catch (Throwable t) {
+			Toast.makeText(context, t.toString(), 50000).show();
+		}
 	 }
    
   

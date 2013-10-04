@@ -24,7 +24,7 @@
      <string name="largeText">citazione</string>
      <string name="text">autore</string>
       <string name="slideButton">Slide</string>
-    
+     <string name="nauthor">Autore ignoto</string>
      <string name="TextView">Come ti senti oggi?</string>
      
      
@@ -34,6 +34,10 @@
      <string name="think_des">Think button</string>
      <string name="quote_des">Quote button</string>
      <string name="happy_des">Happy button</string>
+         <string name="poptitle">Attenzione!</string>
+      <string name="popmessage">Si prega di scrivere un citazione più di 30 caratteri!</string>
+      <string name="poptitle1">Istruzione!</string>
+      <string name="popmessage1">Scuotere il telefono per leggere altre citazioni!</string>
      
 
       

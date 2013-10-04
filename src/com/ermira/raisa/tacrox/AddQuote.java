@@ -42,19 +42,17 @@ if(textQuote.getText().toString().length()<30)
 {
 	 new AlertDialog.Builder(this)
      .setIcon(android.R.drawable.ic_dialog_alert)
-     .setTitle("Be careful!")
-     .setMessage("Please write more than 30 characters")
+     .setTitle(getResources().getString(R.string.poptitle))
+     .setMessage(getResources().getString(R.string.popmessage))
      .setPositiveButton("OK", null)
-
-
- .show();
+     .show();
 }
 else{
 	
 
  queryValuesMap.put("textQuote", textQuote.getText().toString());
  if(textAuthor.getText().toString().length()==0){
-	 queryValuesMap.put("textAuthor","Unknown author");
+	 queryValuesMap.put("textAuthor",getResources().getString(R.string.nauthor));
  }
  else{
  queryValuesMap.put("textAuthor",textAuthor.getText().toString());

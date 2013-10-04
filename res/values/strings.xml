@@ -28,8 +28,11 @@
      <string name="button4">Relax</string>
      <string name="button5">Cry</string>
      <string name="button6">Think+</string>
-
-
+     <string name="poptitle">Be careful!</string>
+      <string name="popmessage">Please write a quote more than 30 characters !</string>
+      <string name="poptitle1">Instruction</string>
+      <string name="popmessage1">Shake the phone to read other quotes!</string>
+      <string name="nauthor">Unknown author</string>
 
 
 
