@@ -73,18 +73,6 @@
         android:text="@string/TextView" />
 
     <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@null"
-        android:contentDescription="@string/happy_des"
-        android:onClick="showBalloon"
-        android:src="@drawable/happybutton" />
-
-    <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,5 +82,17 @@
         android:background="@null"
         android:onClick="showStress"
         android:src="@drawable/stressbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@null"
+        android:contentDescription="@string/happy_des"
+        android:onClick="showBalloon"
+        android:src="@drawable/happybutton" />
 
 </RelativeLayout>

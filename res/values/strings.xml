@@ -3,9 +3,7 @@
 
     <string name="app_name">TacRox</string>
     <string name="action_settings">Settings</string>
-   <string name="button1">Happiness</string>
-    <string name="button2">Sadness</string>
-    <string name="button3">Quotes</string>
+   
     
     <string name="add_quotes">Add Quotes</string>
     <string name="Quote">Quote:</string>
@@ -16,7 +14,7 @@
     <string name="add_button">Add</string>
     
     <string name="save_data">Save</string>
-     <string name="webButton">web</string>
+    
     <string name="edit_quote_title">Edit Quote</string>
     <string name="edit_button">Edit</string>
     <string name="delete_button">Delete</string>
@@ -26,9 +24,7 @@
      <string name="largeText">quote</string>
      <string name="text">author</string>
       <string name="slideButton">Slide</string>
-     <string name="button4">Relax</string>
-     <string name="button5">Cry</string>
-     <string name="button6">Think+</string>
+    
      <string name="TextView">How do you feel today?</string>
      
      

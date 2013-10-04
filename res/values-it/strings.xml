@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TacRox</string>
+    <string name="action_settings">Settings</string>
+   
+    
+    <string name="add_quotes">Aggiungi citazione</string>
+    <string name="Quote">Citazione:</string>
+    <string name="Author">Autore:</string>
+     
+    
+    <string name="my_quote_list_title">La mia lista di citazione</string>
+    <string name="add_button">Aggiungi</string>
+    
+    <string name="save_data">Salva</string>
+    
+    <string name="edit_quote_title">Modifica citazione</string>
+    <string name="edit_button">Modifica</string>
+    <string name="delete_button">Cancella</string>
+     <string name="quoteView">Citazione</string>
+     <string name="authorView">Autore</string>
+     <string name="saveEdit">Salva le modifiche</string>
+     <string name="largeText">citazione</string>
+     <string name="text">autore</string>
+      <string name="slideButton">Slide</string>
+    
+     <string name="TextView">Come ti senti oggi?</string>
+     
+     
+      <string name="sad_des">Sad button</string>
+     <string name="cry_des">Crying button</string>
+     <string name="relax_des">Relax button</string>
+     <string name="think_des">Think button</string>
+     <string name="quote_des">Quote button</string>
+     <string name="happy_des">Happy button</string>
+     
+
+      
+                
+        
+ 
+</resources>
