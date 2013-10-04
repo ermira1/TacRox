@@ -33,9 +33,10 @@
       <string name="poptitle1">Instruction</string>
       <string name="popmessage1">Shake the phone to read other quotes!</string>
       <string name="nauthor">Unknown author</string>
-
-
-
+<string name="close">Closing application!</string>
+<string name="question">Do you want to close this application?</string>
+<string name="yes">Yes</string>
+<string name="no">No</string>
 
 
      <string name="TextView">How do you feel today?</string>

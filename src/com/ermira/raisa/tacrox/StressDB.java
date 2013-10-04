@@ -15,16 +15,17 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
+//This class is the second database of app
 public class StressDB extends SQLiteOpenHelper {
 	Context context;
- public StressDB(Context stressContext){
  
- super(stressContext, "stressDB", null, 1);
- this.context=stressContext;
+	public StressDB(Context stressContext){
  
+		super(stressContext, "stressDB", null, 1);
+		this.context=stressContext;
  }
 
- @Override
+  @Override
  //Create database
  public void onCreate(SQLiteDatabase database) {
 	 String s;
@@ -45,29 +46,28 @@ public class StressDB extends SQLiteOpenHelper {
    
   
  
-
- @Override
- public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {
-     
-   String query = "DROP TABLE IF EXISTS quotelist";
-   
-   database.execSQL(query);
-   onCreate(database);
+//Upgrades database
+  @Override
+  public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {
+	  String query = "DROP TABLE IF EXISTS quotelist";
+	  database.execSQL(query);
+	  onCreate(database);
   }
 
-public String getQuote(int id) {
-    SQLiteDatabase db = this.getReadableDatabase();
- 
-    Cursor cursor = db.query("quotelist", new String[] { "quoteId",
+  //returns the quote with the given id
+  public String getQuote(int id) {
+	  SQLiteDatabase db = this.getReadableDatabase();
+	  Cursor cursor = db.query("quotelist", new String[] { "quoteId",
             "textQuote", "textAuthor" }, "quoteId" + "=?",
             new String[] { String.valueOf(id) }, null, null, null, null);
-    if (cursor != null)
-        cursor.moveToFirst();
- String s1=cursor.getString(1);
-return s1;
+	  if (cursor != null)
+		  cursor.moveToFirst();
+	  String s1=cursor.getString(1);
+	  return s1;
 
 }
-
+  
+//Returns the author of the quote with the given id
 public String getAuthor(int id) {
     SQLiteDatabase db = this.getReadableDatabase();
  
@@ -76,10 +76,12 @@ public String getAuthor(int id) {
             new String[] { String.valueOf(id) }, null, null, null, null);
     if (cursor != null)
         cursor.moveToFirst();
-String s1=cursor.getString(2);
+    String s1=cursor.getString(2);
 
-return s1;
-}
+	return s1;
+} 
+
+//Returns the number of rows in this database
 public int getQuotesCount() {
     String countQuery = "SELECT  * FROM  quotelist" ;
     SQLiteDatabase db = this.getReadableDatabase();

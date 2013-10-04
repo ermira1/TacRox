@@ -9,26 +9,20 @@ import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
-
-
-public class SlideQuote extends Activity 
-{
-	 	 
-	   
- //a TextView
- private TextView quote;
- private TextView author;
- //the Sensor Manager
-
- float xLast,xCurrent;
- int id;
- int total;
- float x;
- boolean first=true;
- String s1,s2;
-  Database quotedatabase = new Database(this);
-int height;
-int width;
+//This class uses touch sensor to change the quote on the screen
+public class SlideQuote extends Activity {
+	
+	private TextView quote;
+	private TextView author;
+	float xLast,xCurrent;
+	int id;
+	int total;
+	float x;
+	boolean first=true;
+	String s1,s2;
+	Database quotedatabase = new Database(this);
+	int height;
+	int width;
 
     /** Called when the activity is first created. */
     @Override
@@ -36,152 +30,99 @@ int width;
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.slide_quote);
-        
+        total=quotedatabase.getQuotesCount();
         //get the TextView from the layout file
         quote = (TextView) findViewById(R.id.textView3);
         author = (TextView) findViewById(R.id.textView4);
-id=1;
-        //get a hook to the sensor service
         
-       /* sManager= (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-     if(sManager.getSensorList(Sensor.TYPE_ACCELEROMETER).size()!=0){
-      Sensor s =sManager.getSensorList(Sensor.TYPE_ACCELEROMETER).get(0);
-      sManager.registerListener(this,s ,SensorManager.SENSOR_DELAY_NORMAL);*/
-      s1= quotedatabase.getQuote(id);
-      s2= quotedatabase.getAuthor(id);
-      total=quotedatabase.getQuotesCount();
-      DisplayMetrics displaymetrics = new DisplayMetrics();
+        id=1;
+        
+        s1= quotedatabase.getQuote(id);
+        s2= quotedatabase.getAuthor(id);
+        
+        DisplayMetrics displaymetrics = new DisplayMetrics();
 
-      getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
-      height = displaymetrics.heightPixels;
-      width = displaymetrics.widthPixels; 
+        getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+        height = displaymetrics.heightPixels;
+        width = displaymetrics.widthPixels; 
 
-      quote.setText(s1);
-      author.setText(s2);
+        quote.setText(s1);
+        author.setText(s2);
     
     }
+    
     //when this Activity starts
     @Override
- protected void onResume()
- {
-  super.onResume();
-  /*register the sensor listener to listen to the gyroscope sensor, use the
-  callbacks defined in this class, and gather the sensor information as quick
-  as possible*/
- // sManager.registerListener(this, sManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),SensorManager.SENSOR_DELAY_NORMAL);
+  protected void onResume(){
+    	super.onResume();
+    }
+  
+  @Override
+  protected void onStop(){
+	  super.onStop();
  }
 
-  //When this Activity isn't visible anymore
- @Override
- protected void onStop()
- {
-  //unregister the sensor listener
-  //sManager.unregisterListener(this);
-  super.onStop();
- }
-
-/* @Override
- public void onAccuracyChanged(Sensor arg0, int arg1)
- {
-  //Do nothing.
- }
-*/
+ //slides the quotes on the screen if the user touches the screen on its left or on its right
  @Override
  public boolean onTouchEvent(MotionEvent event){ 
- { float eventX = event.getX();
-   
- int action = MotionEventCompat.getActionMasked(event);
- 
- switch(action) {
- case (MotionEvent.ACTION_DOWN) :
-	 if(eventX>0&&eventX<width/3){
-		 if(id==total)
-         {id=1;
-         }
-         else{
+	 float eventX = event.getX();
+	 int action = MotionEventCompat.getActionMasked(event);
+	 switch(action) {
+	 case (MotionEvent.ACTION_DOWN) :
+		 if(eventX>0&&eventX<width/3){
+			 if(id==total)
+			 {id=1;
+			 }
+			 else{
           
-         id++;
-         }
-         s1= quotedatabase.getQuote(id);
-            s2= quotedatabase.getAuthor(id);
-            quote.setText(s1);
-            author.setText(s2);
-        }else{if(eventX>2*width/3&&eventX<width){
-		 if(id==1)
-         {id=total;
-         }
-         else{
+        	 id++;
+			 }
+			 s1= quotedatabase.getQuote(id);
+			 s2= quotedatabase.getAuthor(id);
+			 quote.setText(s1);
+			 author.setText(s2);
+		 	}
+		 	else{
+		 		if(eventX>2*width/3&&eventX<width){
+		 			if(id==1)
+		 			{id=total;
+		 			}
+		 			else{
           
-         id--;
-         }
-         s1= quotedatabase.getQuote(id);
-            s2= quotedatabase.getAuthor(id);
-            quote.setText(s1);
-            author.setText(s2);
+		 				id--;
+		 			}
+		 			s1= quotedatabase.getQuote(id);
+		 			s2= quotedatabase.getAuthor(id);
+		 			quote.setText(s1);
+		 			author.setText(s2);
         	
-        }
-        }
+		 		}
+		 	}
 		
-     return true;
- case (MotionEvent.ACTION_MOVE) :
-     
-     return true;
- case (MotionEvent.ACTION_UP) :
-    
-     return true;
- case (MotionEvent.ACTION_CANCEL) :
-    
-     return true;
- case (MotionEvent.ACTION_OUTSIDE) :
-     
-     return true;      
- default : 
-     return super.onTouchEvent(event);
-}      
- }
+	 return true;
+	 case (MotionEvent.ACTION_MOVE) :
+		 return true;
+	 case (MotionEvent.ACTION_UP) :
+		 return true;
+	 case (MotionEvent.ACTION_CANCEL) :
+	     return true;
+	 case (MotionEvent.ACTION_OUTSIDE) :
+		 return true;      
+	 default : 
+		 return super.onTouchEvent(event);
+	 }      
+	}
  
- }
-/* else {if(x>0){
-	 
- }
- else{float deltaX = Math.abs(mLastX - x);
-     float deltaY = Math.abs(mLastY - y);
-     float deltaZ = Math.abs(mLastZ - z);
-     if (deltaX < NOISE) deltaX = (float)0.0;
-     if (deltaY < NOISE) deltaY = (float)0.0;
-     if (deltaZ < NOISE) deltaZ = (float)0.0;
-     mLastX = x;
-     mLastY = y;
-     mLastZ = z;
-     
-     if (deltaX > deltaY) {
-    	 if(id==total)
-         {id=1;
-         }
-         else{
-          
-         id++;
-         }
-         s1= quotedatabase.getQuote(id);
-            s2= quotedatabase.getAuthor(id);
-            quote.setText(s1);
-            author.setText(s2);
-        }
-        
-     } 
  
+//Finishes this activity and calls Quote activity when back button is pressed
+  @Override
+  public void onBackPressed() {
+   // TODO Auto-generated method stub
+	  Intent backIntent = new Intent(getApplication(), Quote.class);
+	  finish();
+      startActivity(backIntent);
   
- }
-  }*/
- @Override
- public void onBackPressed() {
-  // TODO Auto-generated method stub
-  //sManager.unregisterListener(this);
-  Intent backIntent = new Intent(getApplication(), Quote.class);
-       finish();
-       startActivity(backIntent);
-  
- }
+  }
 
  
  }

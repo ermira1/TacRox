@@ -1,0 +1,13 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS quoteList ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)
+</statement>
+<statement>INSERT INTO quotelist  VALUES ( '1', 'N.q.s jeta të jep njëqind arsye për të qarë, tregoji jetës që ke njëmijë arsye për të buzëqeshur.', 'Autor i panjohur')</statement>
+<statement>INSERT INTO quotelist  VALUES ('2', 'Koha për t`u relaksuar është momenti kur ti nuk ke kohë.', 'Sydney J. Harris ')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '3', 'Mos qaj sepse mbaroi, buzëqesh sepse ndodhi.', 'Dr. Seuss')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '4', 'Dy gjëra janë të pafundme: universi dhe budallallëku i njerëzimit, dhe nuk jam i sigurt për universin.', ' Albert Einstein')</statement>
+<statement>INSERT INTO quotelist  VALUES ('5', 'Më pëlqen te eci ne shi, sepse kështu asnjeri nuk mund të më shohë duke qarë.', 'Charly Chaplin ' )</statement>
+<statement>INSERT INTO quotelist  VALUES ('6', 'Bëji vetes një pyetje: A do të ketë rëndësi kjo gjë pas një viti ?', 'Richard Carlson')</statement>
+<statement>INSERT INTO quotelist  VALUES ('7', 'Kurrë mos ua trego problemet e tua të tjerëve...20% nuk duan tja dinë dhe 80% tjerëve u bëhet qejfi.', 'Lou Holtz')</statement>
+
+</sql>

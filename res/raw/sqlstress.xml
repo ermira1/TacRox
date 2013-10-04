@@ -3,7 +3,7 @@
 CREATE TABLE IF NOT EXISTS quoteList ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)
 </statement>
 <statement>INSERT INTO quotelist  VALUES ( '1', 'The greatest weapon against stress is our ability to choose one thought over another.', 'William James')</statement>
-<statement>INSERT INTO quotelist  VALUES ('2', 'The time to relax is when you don`t have time for it.You must learn to let go. Release the stress. You were never in control anyway.', 'Steve Maraboli')</statement>
+<statement>INSERT INTO quotelist  VALUES ('2', 'Release the stress. You were never in control anyway.', 'Steve Maraboli')</statement>
 <statement>INSERT INTO quotelist  VALUES ( '3', 'When things go wrong, don`t go with them.', 'Elvis Presley')</statement>
 <statement>INSERT INTO quotelist  VALUES ( '4', 'If you treat every situation as a life and death matter, you`ll die a lot of times.', 'Dean Smith')</statement>
 <statement>INSERT INTO quotelist  VALUES ('5', 'Give your stress wings and let it fly away.', 'Terri Guillemets' )</statement>

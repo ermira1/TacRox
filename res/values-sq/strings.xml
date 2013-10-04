@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TacRox</string>
+    <string name="action_settings">Settings</string>
+   
+    
+    <string name="add_quotes">Shto thënie</string>
+    <string name="Quote">Thënia:</string>
+    <string name="Author">Autori:</string>
+     
+    
+    <string name="my_quote_list_title">Lista e thënieve</string>
+    <string name="add_button">Shto</string>
+    
+    <string name="save_data">Ruaj</string>
+
+    <string name="edit_quote_title">Ndrysho thënien</string>
+    <string name="edit_button">Ndrysho</string>
+    <string name="delete_button">Fshij</string>
+     <string name="quoteView">Thënie</string>
+     <string name="authorView">Autori</string>
+     <string name="saveEdit">Ruaj ndryshimet</string>
+     <string name="largeText">thënie</string>
+     <string name="text">autori</string>
+      <string name="slideButton">Slide</string>
+
+     <string name="button4">Relaks</string>
+     <string name="button5">Qaj</string>
+     <string name="button6">Mendo+</string>
+     <string name="poptitle">Kujdes!</string>
+      <string name="popmessage">Ju lutem shkruani thënie me më shumë se 30 karaktere!</string>
+      <string name="poptitle1">Instruksion</string>
+      <string name="popmessage1">Shkundni telefonin për të lexuar thënie të tjera!</string>
+      <string name="nauthor">Autor i panjohur</string>
+<string name="close">Po mbyllni aplikacionin!</string>
+<string name="question">Doni ta mbyllni aplikacionin?</string>
+<string name="yes">Po</string>
+<string name="no">Jo</string>
+
+
+
+     <string name="TextView">Si ndihesh sot?</string>
+     
+
+     
+      <string name="sad_des">Sad button</string>
+     <string name="cry_des">Crying button</string>
+     <string name="relax_des">Relax button</string>
+     <string name="think_des">Think button</string>
+     <string name="quote_des">Quote button</string>
+     <string name="happy_des">Happy button</string>
+     <string name="stress_des">Stress button</string>
+      
+      <string name="webButton">Webi</string>
+     
+
+      
+                
+        
+ 
+</resources>

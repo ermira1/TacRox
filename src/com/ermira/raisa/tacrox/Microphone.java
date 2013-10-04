@@ -4,12 +4,11 @@ import java.io.IOException;
 
 import android.media.MediaRecorder;
 
+//This class implements the microphone 
 public class Microphone {
 	MediaRecorder recorder;
 	int level;
-   // static final private lo EMA_FILTER = 0.7;
-   // private float mEMA = 0;
-	
+   
 	public Microphone(){
         // Audio recorder
         recorder = new MediaRecorder();
@@ -17,11 +16,10 @@ public class Microphone {
         recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
         recorder.setOutputFile("/dev/null");
-        //mEMA = 0;
-       try {
+        try {
 			recorder.prepare();
 	        	
-       }
+        }
 	      catch (IllegalStateException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -29,33 +27,27 @@ public class Microphone {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-       recorder.start();
+        recorder.start();
 
 	}
 	
+	//Thia method stops the recorder
 	public void stopMic(){
 		if(recorder!=null){
         recorder.stop();
-         recorder.release();
-          recorder=null;
-		}
-               
-        
-}
+        recorder.release();
+        recorder=null;
+        }
+  }
+	
+	//This method returns the reduced maxAmplitude of the sound
 	public long getLevel(){
 		level = recorder.getMaxAmplitude();
 		level = level/400;
 		return level;
 	}
-	/*public float getAmplitudeEMA() {
-        long amp = getLevel();
-        mEMA = EMA_FILTER * amp + (1.0 - EMA_FILTER) * mEMA;
-        return mEMA;
-}
-	*/
 	
-	
-	
+    
 	
 	
 	

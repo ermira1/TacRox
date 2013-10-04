@@ -1,0 +1,12 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS quoteList ( quoteId INTEGER PRIMARY KEY, textQuote TEXT ,textAuthor TEXT)
+</statement>
+<statement>INSERT INTO quotelist  VALUES ( '1', 'Arma me e mirë kunder stresit është te jesh i aftë të zgjedhësh mendimet e tua.', 'William James')</statement>
+<statement>INSERT INTO quotelist  VALUES ('2', 'Lëre strsin te ike. Cliroje atë.', 'Steve Maraboli')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '3', 'N.q.s gjërat shkojnë keq, ti mos shko me ato .', 'Elvis Presley')</statement>
+<statement>INSERT INTO quotelist  VALUES ( '4', 'N.q.s cdo situate e trajton si cështje për jete a vdekje, atëherë do të vdesesh shumë herë.', 'Dean Smith')</statement>
+<statement>INSERT INTO quotelist  VALUES ('5', 'Jepi stresit krahë dhe lëre të fluturojë larg.', 'Terri Guillemets' )</statement>
+<statement>INSERT INTO quotelist  VALUES ('6', 'Nuk ka asnjeheë kohë të mjaftueshme për te berë të gjthë gjërat që deshiron.', 'Bill Watterson')</statement>
+<statement>INSERT INTO quotelist  VALUES ('7', 'Stresi është nje gjendje injorante, e cila mendon se cdo gjë është emergjente.', 'Natalie Goldberg')</statement>
+</sql>

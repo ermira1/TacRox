@@ -26,8 +26,10 @@
       <string name="slideButton">Slide</string>
      <string name="nauthor">Autore ignoto</string>
      <string name="TextView">Come ti senti oggi?</string>
-     
-     
+    <string name="close">Chiusura applicazione!</string>
+    <string name="question">Vuoi chiudere questa applicazione?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
       <string name="sad_des">Sad button</string>
      <string name="cry_des">Crying button</string>
      <string name="relax_des">Relax button</string>
