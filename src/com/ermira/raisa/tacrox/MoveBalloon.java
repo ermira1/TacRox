@@ -24,7 +24,11 @@ public class MoveBalloon extends Activity {
     Bitmap buble;
     Bitmap _buble;
 
-    int i,j,k,l;
+    int i;
+    int j;
+    int k;
+    int l;
+    int m;
     private MediaPlayer mp;
     Bitmap foto;
     Bitmap _foto;
@@ -48,7 +52,7 @@ public class DrawBalloon extends SurfaceView implements Runnable {
 	
 	public DrawBalloon(Context context) {
 		super(context);
-		 mp = MediaPlayer.create(context, R.raw.raisa);
+		 mp = MediaPlayer.create(context, m);
 		 
 		ourHolder= getHolder();
 		
@@ -114,6 +118,7 @@ protected void onCreate(Bundle savedInstanceState) {
 	j=intent.getIntExtra("b2", 0);
 	k=intent.getIntExtra("b3", 0);
 	l=intent.getIntExtra("b4", 0);
+	m=intent.getIntExtra("b5", 0);
 
 
 mic = new Microphone();

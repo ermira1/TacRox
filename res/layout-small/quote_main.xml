@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quotebg"
+     >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         android:background="#80339900" 
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="@string/my_quote_list_title"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+    />
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+       android:background="#33339900" 
+        android:textColor="#FFFFFF"
+        android:onClick="showAddItem"
+        android:text="@string/add_button"
+        />
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/buttonadd" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/buttonadd"
+        android:background="#33339900"
+        android:onClick="slideQuote"
+        android:text="@string/slideButton"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

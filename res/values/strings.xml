@@ -32,6 +32,11 @@
 
 
 
+
+
+     <string name="TextView">How do you feel today?</string>
+     
+
      
       <string name="sad_des">Sad button</string>
      <string name="cry_des">Crying button</string>
@@ -39,6 +44,7 @@
      <string name="think_des">Think button</string>
      <string name="quote_des">Quote button</string>
      <string name="happy_des">Happy button</string>
+     <string name="stress_des">Stress button</string>
       
       <string name="webButton">Webi</string>
      

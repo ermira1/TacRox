@@ -22,7 +22,7 @@ public class StartingApp extends Activity{
 	}
 	
 	public void openWeb(View view){
-		Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.yahoo.com"));
+		Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://quotelicious.com/"));
 	    startActivity(i);
 	}
 	public void showQuoteList(View view){

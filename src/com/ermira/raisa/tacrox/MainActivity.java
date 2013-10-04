@@ -13,6 +13,7 @@ int b1;
 int b2;
 int b3;
 int b4;
+int b5;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -31,11 +32,13 @@ int b4;
 		b2=R.drawable.sky;
 	    b3=R.drawable.quote;
 	    b4=R.drawable.buble2;
+	    b5=R.raw.happy;
 	Intent intent = new Intent(getApplicationContext(), MoveBalloon.class);
 	intent.putExtra("b1", b1);
 	intent.putExtra("b2", b2);
 	intent.putExtra("b3", b3);
 	intent.putExtra("b4", b4);
+	intent.putExtra("b5", b5);
 
 	finish();
 	startActivity(intent);
@@ -48,13 +51,13 @@ int b4;
 		b2=R.drawable.bmoon;
 	    b3=R.drawable.moonwrite;
 	    b4=R.drawable.buble1;
-
+        b5=R.raw.sad;
 	Intent intent = new Intent(getApplicationContext(), MoveBalloon.class);
 	intent.putExtra("b1", b1);
 	intent.putExtra("b2", b2);
 	intent.putExtra("b3", b3);
 	intent.putExtra("b4", b4);
-
+	intent.putExtra("b5", b5);
 	finish();
 	startActivity(intent);
 	
@@ -134,6 +137,13 @@ int b4;
 		  startActivity(objIntent);
 		  
 		 }
+	
+	public void showStress(View view){
+		  Intent objIntent = new Intent(getApplication(), Accelerometer.class);
+			 finish();
+			  startActivity(objIntent);
+		
+	}
 
 
 }

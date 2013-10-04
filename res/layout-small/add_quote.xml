@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/quotebg"
+    
+     >
+    
+
+    <TextView
+        android:id="@+id/addNewItemsTittle"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/add_quotes"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20sp"
+       android:background="#80339900" 
+        />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:onClick="addNewItems"
+        android:text="@string/save_data"
+        android:background="#33339900" 
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/textAuthorAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/amountTextView"
+        android:layout_marginTop="35dp"
+        android:textColor="@android:color/white"
+        android:background="#33999999" 
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/textQuoteAdd"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:background="#33999999" 
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemTextView"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:layout_height="30dp"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/Author"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addNewItemsTittle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/Quote"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+   
+</RelativeLayout>
