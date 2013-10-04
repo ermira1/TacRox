@@ -36,26 +36,12 @@
         android:typeface="serif" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_alignBottom="@+id/button11"
-        android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@+id/textView2"
-         android:onClick="removeItem"
-          android:background="#33339900" 
-        android:textColor="#FFFFFF"
-          android:textSize="30sp"
-           android:text="@string/delete_button"
-         />
-
-    <Button
         android:id="@+id/button11"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="107dp"
-        android:layout_toLeftOf="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
         android:background="#33339900"
         android:onClick="editItems"
         android:text="@string/edit_button"

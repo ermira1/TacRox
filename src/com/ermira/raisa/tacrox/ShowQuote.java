@@ -40,15 +40,6 @@ public class ShowQuote extends Activity {
 		   startActivity(theIntent); 
 	}
 	   
-	   //This method is used to remove item from the list
-	   
-	   public void removeItem(View view){
-	    
-	    Intent theIntent = getIntent();
-	    String quoteId = theIntent.getStringExtra("quoteId");
-	    quotedatabase.deleteItem(quoteId);
-	    this.callQuote(view);
-	    }
 	   
 	   //This method finishes this activity and calls Quote activity
 	   public void callQuote(View view){

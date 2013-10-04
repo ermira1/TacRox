@@ -87,14 +87,6 @@ public class Database extends SQLiteOpenHelper {
 
   }
 
-//Delete quotes into the database
-
-   public void deleteItem(String id){
-	   SQLiteDatabase database = this.getWritableDatabase();
-	   String deleteQuery = "DELETE FROM quotelist WHERE quoteId='" + id + "'";
-	   database.execSQL(deleteQuery);
-	   database.close();
-   }
 
    
    //Gets all datas in the database

@@ -40,24 +40,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="51dp"
-        android:layout_toLeftOf="@+id/textView2"
-         android:background="#33339900" 
-        android:textColor="#FFFFFF"
-       android:onClick="editItems"
-        android:text="@string/edit_button" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button11"
-        android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@+id/textView2"
-         android:onClick="removeItem"
-          android:background="#33339900" 
-        android:textColor="#FFFFFF"
-           android:text="@string/delete_button"
-         />
+        android:layout_marginBottom="54dp"
+        android:layout_centerHorizontal="true"
+        android:background="#33339900"
+        android:onClick="editItems"
+        android:text="@string/edit_button"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
